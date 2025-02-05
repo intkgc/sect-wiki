@@ -3,7 +3,7 @@ title: Главная
 cssclasses:
   - centered-table
 ---
-# Что это вообще такое?
+# Добро пожаловать на Sect Wiki
 
 - [[members/|Участники]]
 - [[projects/|Проекты]]
