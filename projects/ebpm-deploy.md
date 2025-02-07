@@ -4,9 +4,9 @@ devs:
   - "[[intkgc]]"
 status: "#✒"
 requirements:
-  - [[ebpm]]
-  - [[ebpm-deploy-server]]
-  - [[ebpm-deploy-client]]
+  - "[[ebpm]]"
+  - "[[ebpm-deploy-server]]"
+  - "[[ebpm-deploy-client]]"
 ---
 
 
