@@ -1,7 +1,7 @@
 ---
 title: Intellivault
 description: Плагин с ChatGPT для обсидиана.
-subprojects:
+requirements:
   - "[[mkadb]]"
 devs:
   - "[[intkgc]]"
