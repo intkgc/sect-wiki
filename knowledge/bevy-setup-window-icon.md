@@ -12,14 +12,8 @@ use bevy::prelude::*;
 use bevy_winit::WINIT_WINDOWS;
 use winit::window::Icon;
 
-#[derive(Resource, Default)]
-pub struct IconSet(bool);
-
-pub fn set_window_icon_once(_marker: NonSendMarker, mut icon_set: ResMut<IconSet>) {
-    if icon_set.0 {
-        return;
-    }
-
+// Sturtup system
+pub fn set_window_icon(_marker: NonSendMarker) {
     WINIT_WINDOWS.with_borrow(|winit_windows| {
         if winit_windows.windows.len() == 0 {
             return;
@@ -40,7 +34,6 @@ pub fn set_window_icon_once(_marker: NonSendMarker, mut icon_set: ResMut<IconSet
             window.set_window_icon(Some(icon.clone()));
         }
 
-        icon_set.0 = true;
         info!("Window icon set");
     });
 }
